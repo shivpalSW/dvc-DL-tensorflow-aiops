@@ -155,7 +155,8 @@ dmypy.json
 
 ./env
 
-/data
+/data/cat/*.jpg
+/data/dog/*.jpg
 
 # ignore the secreats file
 config/secrets.yaml
