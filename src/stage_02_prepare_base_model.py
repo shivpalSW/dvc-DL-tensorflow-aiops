@@ -1,5 +1,5 @@
 from src.utils.all_utils import read_yaml, create_directory
-from src.utils.models import get_VGG_16_model
+from src.utils.models import get_VGG_16_model,prepare_model
 import argparse
 import os
 import logging
@@ -32,8 +32,8 @@ def prepare_base_model(config_path, params_path):
     full_model = prepare_model(
         model,
         CLASSES=params["CLASSES"],
-        freeze_all=True,
-        freeze_till=None,
+        freeze_all=False,
+        freeze_till=1,
         learning_rate=params["LEARNING_RATE"]
     )
 
