@@ -58,6 +58,7 @@ def train_model(config_path, params_path):
     logging.info(f"trained model is saved at: {model_file_path}")
 
 
+
 if __name__ == '__main__':
     args = argparse.ArgumentParser()
 
