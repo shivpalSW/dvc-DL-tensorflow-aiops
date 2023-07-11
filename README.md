@@ -33,7 +33,7 @@ touch src/__init__.py src/utils/__init__.py param.yaml dvc.yaml config/config.ya
 pip install -e .
 ```
 
-#### To change the(rename) name of long environment name path to hshorter name in current environmen directory :
+#### To change the(rename) name of long environment name path to shorter name in current environmen directory :
 ```bash
 conda config --set env_prompt ({name}) 
 ```
