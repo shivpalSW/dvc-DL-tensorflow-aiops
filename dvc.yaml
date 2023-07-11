@@ -54,3 +54,4 @@ stages:
       - AUGMENTATION
     outs:
       - artifacts/model
+    
