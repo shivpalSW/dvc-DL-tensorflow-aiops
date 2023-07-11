@@ -38,7 +38,7 @@ def prepare_model(model, CLASSES, freeze_all, freeze_till, learning_rate):
 
 
     full_model.compile(
-        optimizer = tf.keras.optimizers.Optimizer.SGD(learning_rate=learning_rate),
+        optimizer = tf.keras.optimizers.SGD(learning_rate=learning_rate),
         loss = tf.keras.losses.CategoricalCrossentropy(),
         metrics = ["accuracy"]
     )
