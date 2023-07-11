@@ -56,8 +56,8 @@ stages:
       md5: 688186937b949f381b1a6b05d1901b9a
       size: 132
     - path: src/stage_03_prepare_callbacks.py
-      md5: 14f810567c99ac8cbba94c2da4800a57
-      size: 1813
+      md5: 979b6d5a2e7528279d26b4786788d278
+      size: 1815
     - path: src/utils/all_utils.py
       md5: b2b2f22ec479325d82ba876757efc386
       size: 1007
@@ -69,7 +69,7 @@ stages:
       md5: fa4abcae7e340415ddfaabd96efa85bb
       size: 869
     - path: artifacts/callbacks/tensorboard_cb.cb
-      md5: 89c71c2294c7e04195719974c7e9cf4d
+      md5: 3a14c66a67176f9e2719a7f0be4ce0e9
       size: 682
   train:
     cmd: python src/stage_04_train.py --config=config/config.yaml --params=params.yaml
