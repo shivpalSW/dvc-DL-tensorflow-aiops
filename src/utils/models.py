@@ -1,8 +1,9 @@
 import tensorflow as tf
 import os
 import logging
-#from tensorflow.python.keras.backend import flatten
-#from src.utils.all_utils import get_timestamp
+from tensorflow.python.keras.backend import flatten
+from src.utils.all_utils import get_timestamp
+#tf.keras.optimizers.Optimizer
 
 def get_VGG_16_model(input_shape, model_path):
     model = tf.keras.applications.vgg16.VGG16(
@@ -35,8 +36,9 @@ def prepare_model(model, CLASSES, freeze_all, freeze_till, learning_rate):
         outputs = prediction
     )
 
+
     full_model.compile(
-        optimizer = tf.keras.optimizers.SGD(learning_rate=learning_rate),
+        optimizer = tf.keras.optimizers.Optimizer.SGD(learning_rate=learning_rate),
         loss = tf.keras.losses.CategoricalCrossentropy(),
         metrics = ["accuracy"]
     )
